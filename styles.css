@@ -138,6 +138,15 @@ p {
 .info_text .col+.col {
     border-left: 1px solid #D7D7DD;
 }
+/* second page */
+.question_work > h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.question_work > p {
+    margin-bottom: 2.5rem;
+}
 
 .second_page {
     margin-top: 40.625rem;
@@ -168,7 +177,7 @@ p {
 
 .checkmark {
     position: absolute;
-    top: 0;
+    top: 0.5rem;
     left: 0;
     height: 1.5rem;
     width: 1.5rem;
@@ -182,7 +191,7 @@ p {
 
 .radio_question {
     position: relative;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-left: 2.5rem;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
@@ -201,6 +210,6 @@ p {
 }
 
 .radio_question_text {
-    margin-left: 6rem;
+    margin-left: 3.5rem;
     margin-right: 7.8125rem;
 }

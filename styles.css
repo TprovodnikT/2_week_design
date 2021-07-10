@@ -139,14 +139,16 @@ p {
 .info_text .col+.col {
     border-left: 1px solid #D7D7DD;
 }
+
 /* second page */
-.question_work > h1 {
+
+.question_work>h1 {
     margin: 0;
     font-size: 3rem;
     margin-bottom: 2rem;
 }
 
-.question_work > p {
+.question_work>p {
     margin-bottom: 2.5rem;
 }
 
@@ -156,7 +158,7 @@ p {
 }
 
 .question_work {
-    display:inline-block;
+    display: inline-block;
     width: 42.9375rem;
 }
 
@@ -202,13 +204,17 @@ p {
     margin-bottom: 1.03125rem;
 }
 
+.radio_question:last-child {
+    margin-bottom: 0;
+}
+
 .radio_question::after {
-    content:"";
+    content: "";
     width: 12.0625rem;
     height: 3.84375rem;
     background-image: url(triangle_radio.svg);
     position: absolute;
-    bottom:0;
+    bottom: 0;
     right: 0;
 }
 
@@ -220,10 +226,11 @@ p {
 .vote_counter {
     margin-top: 10.25rem;
     margin-left: 8.75rem;
+    /* margin-left: 2.5rem; */
     display: inline-block;
-    vertical-align:top;
+    vertical-align: top;
     width: 17.5625rem;
-    padding-bottom: 2.4375rem;
+    padding-bottom: 1.75rem;
     border-bottom: 3px solid #FFCE50;
 }
 
@@ -235,4 +242,51 @@ p {
 
 .vote_counter h2 {
     margin: 0.5rem 0 0 0;
+}
+
+/* third page */
+
+.third_page {
+    margin-top: 6.25rem;
+}
+
+.third_page_img {
+    height: 28.3125rem;
+    background-color: #6B6B6C;
+    margin-right: 6.25rem;
+    background-repeat: no-repeat;
+    background-image: url('https://s3-alpha-sig.figma.com/img/d178/f109/c65fb09013ffae7d86279091e013571c?Expires=1626652800&Signature=SrzXwPtaZ8oVAIfKRGo5GcvsPtF07t6wnnJJIkoUr5d~gfK413DpXQ8zlQhiOynKiiL4YSOf8rJtN7~sG1kgN7OGQkrrqeK0yxaKF8lXYpg9MW-yy9uSnO0l55Vlmx7KNuMrp4PpZgkSwcIfd-gG~diENhRegJbnPCpdK20TuN4TXc-bJZvPyqdrFKFH5j8Fg6OzfQNIe~0MzlUqLzyPdQDdfukAhoNYuz6ZM0Z7xBJo0SPjIHZMNrMOrwYLz3JHo7hlF8G0cNzaJaS~JzKnmoEhP3HUwD~YbBIq3ygYFU7dD9QOo4qSv9mFN9HV6yY8PgW~fi-3A8UzzG9~-Z2YLg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+    background-size: cover;
+    background-size: 85%;
+    background-position-x: 250px;
+    background-position-y: -140px;
+}
+
+#trapezoid {
+    display: inline-block;
+    position: absolute;
+    border-bottom: 453.5px solid #0B7572;
+    border-right: 21.8125rem solid transparent;
+    height: 0;
+    width: 50%;
+}
+
+#trapezoid_2 {
+    position: absolute;
+    border-bottom: 453.5px solid #0B7572;
+    border-right: 21.8125rem solid transparent;
+    height: 0;
+    width: 67.4%;
+    opacity: 0.3;
+}
+#trapezoid div {
+    margin-top: 10rem;
+    margin-left: 6.3125rem;
+    width: 22.625rem;
+    position: absolute;
+    z-index: 999;
+}
+#trapezoid div h1{
+    color: #fff;
+    font-size: 3rem;
 }

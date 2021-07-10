@@ -186,12 +186,12 @@ p {
     left: 0;
     height: 1.5rem;
     width: 1.5rem;
-    background-image: url(checkbox.svg);
+    background-image: url(svg/checkbox.svg);
     border-radius: 50%;
 }
 
 .radio_container input:checked~.checkmark {
-    background-image: url(checkbox_checked.svg);
+    background-image: url(svg/checkbox_checked.svg);
 }
 
 .radio_question {
@@ -212,7 +212,7 @@ p {
     content: "";
     width: 12.0625rem;
     height: 3.84375rem;
-    background-image: url(triangle_radio.svg);
+    background-image: url(svg/triangle_radio.svg);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -248,6 +248,8 @@ p {
 
 .third_page {
     margin-top: 6.25rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .third_page_img {
@@ -279,6 +281,7 @@ p {
     width: 67.4%;
     opacity: 0.3;
 }
+
 #trapezoid div {
     margin-top: 10rem;
     margin-left: 6.3125rem;
@@ -286,7 +289,43 @@ p {
     position: absolute;
     z-index: 999;
 }
-#trapezoid div h1{
+
+#trapezoid div h1 {
     color: #fff;
     font-size: 3rem;
+}
+
+.third_page_table {
+    margin-top: 4.53125rem;
+    margin-left: 10.25rem;
+    width: 62.375rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    row-gap:   4rem;
+}
+
+.third_page_table .third_page_table_col {
+    height: 4.8125rem;
+    display: flex;
+}
+
+.third_page_table .icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: #E9E9EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-right: 2.5rem;
+}
+
+.third_page_table_description {
+    width: 20.4375rem;
+}
+
+.third_page_table_description h2 {
+    font-size: 1.25rem;
+    margin:0;
 }

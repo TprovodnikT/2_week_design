@@ -61,6 +61,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     transform: scaleX(-1);
+    background-position-x: -57px;
     width: 635px;
     height: 505px;
     top: 109px;
@@ -140,6 +141,7 @@ p {
 }
 /* second page */
 .question_work > h1 {
+    margin: 0;
     font-size: 3rem;
     margin-bottom: 2rem;
 }
@@ -149,11 +151,12 @@ p {
 }
 
 .second_page {
-    margin-top: 40.625rem;
+    margin-top: 40rem;
     padding-left: 6.25rem;
 }
 
 .question_work {
+    display:inline-block;
     width: 42.9375rem;
 }
 
@@ -212,4 +215,24 @@ p {
 .radio_question_text {
     margin-left: 3.5rem;
     margin-right: 7.8125rem;
+}
+
+.vote_counter {
+    margin-top: 10.25rem;
+    margin-left: 8.75rem;
+    display: inline-block;
+    vertical-align:top;
+    width: 17.5625rem;
+    padding-bottom: 2.4375rem;
+    border-bottom: 3px solid #FFCE50;
+}
+
+.vote_counter h1 {
+    display: inline-block;
+    font-size: 3.375rem;
+    margin: 0;
+}
+
+.vote_counter h2 {
+    margin: 0.5rem 0 0 0;
 }

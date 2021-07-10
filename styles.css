@@ -1,0 +1,206 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.intro {
+    position: relative;
+    padding-left: 6.25rem;
+    padding-top: 11.875rem;
+    width: 38.125rem;
+    /* display: inline-block; */
+}
+
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 3.25rem;
+    color: #363738;
+}
+
+.intro span {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #6B6B6C;
+}
+
+.intro a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 2.5rem;
+    color: #363738;
+    padding-bottom: 0.125rem;
+    border-bottom: 3px solid #FFCE50;
+}
+
+.green-zone {
+    width: 599px;
+    top: 0;
+    right: 0;
+    height: 787px;
+    position: absolute;
+    background-color: #0B7572;
+    overflow: visible;
+}
+
+.img-label {
+    position: absolute;
+    background-image: url("https://s3-alpha-sig.figma.com/img/e916/1120/c9091acd7bd3a799887b51309c123c68?Expires=1626652800&Signature=Fmk3zrGTj4FlQkJ91LBYhRGnwnChR43aBVmgcy9GPJcIifa5xnY8E3zwNDEGS-lzxpDPfOEz9whG7YWKkJYtTMlUUgLf9GoPqrJWsNw84A2qL6zAE67VRYoBHf31VMBDvBzVPCnasdU0jF~t0nw8ahcJPRMo9dvtOUxYQWkGt5cscQkWMLVMhmdFsJO825eAq1cr6JDWBkKnHGKArahY3aOc3rEf8LwdU~aC5h-lZW2dCbrGGa3Jm-wSBlNrfEVsrkM-rF0NJKkq65Ddvyl9HbGh3XPdhfSyy54CAJieyTbcoQREKnhHVjnx1fL~8Zy8pGLaJP-rPHo8mYbALa3XWw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    width: 635px;
+    height: 505px;
+    top: 109px;
+    right: 100px;
+    z-index: 999;
+    border-radius: 0 20px 20px 20px;
+}
+
+/* div under the image */
+
+.info_text {
+    border-radius: 20px 20px 0 0;
+    margin-top: 12.5rem;
+    right: 6.25rem;
+    left: 6.25rem;
+    height: 21.3125rem;
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info_text_container {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 7.625rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info_text_container>col .col_content {
+    width: 14.25rem;
+}
+
+.col {
+    width: 100%;
+}
+
+.col_content {
+    width: 14.25rem;
+}
+
+h2 {
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #363738;
+}
+
+p {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    color: #6B6B6C;
+}
+
+.info_text .col .col_content .icon {
+    margin-bottom: 1.5rem;
+    width: 5.75rem;
+    height: 5.75rem;
+    background-color: #E9E9EC;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_text .col+div>.col_content {
+    padding-left: 4rem;
+    width: 18.25rem;
+}
+
+.info_text .col+.col {
+    border-left: 1px solid #D7D7DD;
+}
+
+.second_page {
+    margin-top: 40.625rem;
+    padding-left: 6.25rem;
+}
+
+.question_work {
+    width: 42.9375rem;
+}
+
+/* checkbox and a bit of pain XD */
+
+.radio_container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: url(checkbox.svg);
+    border-radius: 50%;
+}
+
+.radio_container input:checked~.checkmark {
+    background-image: url(checkbox_checked.svg);
+}
+
+.radio_question {
+    position: relative;
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    height: 11rem;
+    margin-bottom: 1.03125rem;
+}
+
+.radio_question::after {
+    content:"";
+    width: 12.0625rem;
+    height: 3.84375rem;
+    background-image: url(triangle_radio.svg);
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
+.radio_question_text {
+    margin-left: 6rem;
+    margin-right: 7.8125rem;
+}
